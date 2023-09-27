@@ -1,13 +1,103 @@
+/* App.css */
+
+/* Reset default margin and padding */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background */
+  font-family: 'Arial', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style the container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the header */
+h1 {
+  color: #333;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Style the input field */
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #007bff; /* Blue underline */
+  outline: none;
+  width: 70%;
+  margin-right: 10px;
+  transition: border-bottom 0.3s ease;
+}
+
+/* Style the input field on focus */
+input[type="text"]:focus {
+  border-bottom: 2px solid #ff6347; /* Red underline on focus */
+}
+
+/* Style the add button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style the add button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the reset button */
+button.reset-button {
+  background-color: #ff6347;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/* Style the todo list container */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the todo items */
+.todo-item {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style completed todo items */
+.todo-item.completed {
+  text-decoration: line-through;
+  background-color: #f0f0f0;
+}
+
+/* Style todo item hover effect */
+.todo-item:hover {
+  background-color: #f9f9f9;
 }
